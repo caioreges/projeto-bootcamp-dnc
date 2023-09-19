@@ -7,8 +7,13 @@
 }
 
 body {
-   background-color: #303030;
+   margin: 0 auto;
+   
    color: white;
+   max-width: 1280px;
+   display: flex;
+   flex-flow: column;
+   align-content: center;
 }
 
 a {
@@ -17,30 +22,31 @@ a {
 }
 
  .conteiner {
+   background-color: #303030;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr auto;
+    padding: 0 25px;
  }
 
- .conteiner ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
- }
-
- .conteiner nav ul li {
-    margin-right: 20px;
-
-
-    
- }
 
  #header {
+   color: white;
+   align-items: center;
+   padding: 0 30px;
+   
+ }
 
-    color: white;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+ #header nav {
+   flex-wrap: wrap;
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 20px;
+ }
+
+ #header div {
+   align-self: center;
  }
 
  .button-login {
@@ -84,7 +90,7 @@ a {
 
  #form {
    margin-left: 0%;
-   margin-bottom: 100px;
+   padding-bottom: 100px;
  }
 
  #main-form > * {
@@ -117,6 +123,11 @@ a {
 }
 
 #footer, #bottom-menu {
+   display: flex;
+   column-gap: 35px;
+   row-gap: 10px;
+   justify-content: space-around;
+   flex-wrap: wrap;
    background-color: #0C70F2;
    padding: 20px 0;
 }
