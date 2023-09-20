@@ -21,53 +21,62 @@ a {
    color:inherit;
 }
 
- .conteiner {
+.conteiner {
    background-color: #303030;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr auto;
-    padding: 0 25px;
- }
-
-
- #header {
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 1fr auto;
+   padding: 0 25px;
+}
+#header {
    color: white;
    align-items: center;
    padding: 0 30px;
-   
- }
+}
 
- #header nav {
-   flex-wrap: wrap;
-   width: 40%;
-   display: flex;
-   justify-content: space-between;
-   column-gap: 20px;
- }
+#header nav {
+flex-wrap: wrap;
+width: 40%;
+display: flex;
+justify-content: space-between;
+column-gap: 20px;
+}
 
- #header div {
-   align-self: center;
- }
+#header div {
+align-self: center;
+}
 
- .button-login {
-    width: 80px;
-    height: 32px;
-    background-color: #0C70F2;
-    color: white;
-    border: 0px;
-    margin: 20px 0;
-    font-size: 12pt;
- }
+#header a:hover {
+   color: #cccccc;
+}
 
- #headline {
-    text-align: center;
-    background-image: linear-gradient(to bottom,
-    #1453a5 0%,
-    #1453a5 50%,
-    #1453a5 75%,
-    #303030 95%
-   );
-    padding-bottom: 120px;
+.button-login {
+   transition: 0.1s;
+   width: 80px;
+   height: 32px;
+   background-color: #0C70F2;
+   color: white;
+   border: 0px;
+   margin: 20px 0;
+   font-size: 12pt;
+   /* box-shadow Parameters: [horizontal offset] [vertical offset] [blur radius] [color]  */
+   box-shadow: 2px 2px 3px #00000025;
+}
+
+.button-login:hover {
+   transform: scale(104%);
+   transition: 0.1s;
+}
+
+#headline {
+   text-align: center;
+   background-image: linear-gradient(to bottom,
+   #1453a5 0%,
+   #1453a5 50%,
+   #1453a5 75%,
+   #303030 95%
+);
+   padding-bottom: 120px;
  }
 
  #headline h1 {
@@ -105,16 +114,27 @@ a {
    padding-left: 8px;
 }
 
+.input::-webkit-ro {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #submit-login {
+   transition: 0.1s;
    text-align: center;
    width: 430px;
-    height: 39px;
-    background-color: #0C70F2;
-    color: white;
-    border: 0px;
-    border-radius: 7px;
-    margin: 25px 0;
-    font-size: 14pt;
+   height: 39px;
+   background-color: #0C70F2;
+   color: white;
+   border: 0px;
+   border-radius: 7px;
+   margin: 25px 0;
+   font-size: 14pt;
+}
+
+#submit-login:hover {
+   transform: scale(104%);
+   transition: 0.1s;
 }
 
 #footer, #bottom-menu {
