@@ -41,7 +41,6 @@ a {
 }
 
 #header nav {
-flex-wrap: wrap;
 width: 40%;
 display: flex;
 justify-content: space-between;
@@ -184,7 +183,6 @@ a:hover {
    column-gap: 35px;
    row-gap: 10px;
    justify-content: space-around;
-   flex-wrap: wrap;
    background-color: var(--blue-dnc);
    padding: 20px 0;
 }
@@ -210,4 +208,65 @@ a:hover {
    border: 0;
    border-radius: 5px;
    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+   
+   /* Menu */
+   #header {
+      display: flex;
+      flex-direction: column;
+      columns: 1;
+   }
+
+   #header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 98%;
+      margin: 0px;
+   }
+
+   #header nav a {
+      margin: 8px 0;
+   }
+
+   /* Headline */
+
+   #headline h1 {
+      font-size: 28pt;
+   }
+
+   #headline h2 {
+      font-size: 16pt;
+   }
+
+   /* FORM */
+   #main-form {
+      padding: 0 10px;
+   }
+
+   #main-form div {
+      width: 98%;
+
+   }
+
+   .input {
+      width: 95%;
+   }
+
+   #submit-login {
+      width: 97%;
+      text-align: center;
+   }
+
+   #checkbox-block label {
+      font-size: 10pt;      
+   }
+
+   /* FOOTER */
+   #bottom-menu {
+      flex-direction: column;
+   }
 }
