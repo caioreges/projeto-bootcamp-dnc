@@ -24,49 +24,55 @@
         <div>
             <h1>BOOTCAMP DNC</h1>
             <h2>
-                Esse será um evento exclusivo para todos os alunos <br>da DNC, que querem <span class="text-background-black"> acelerar a carreira </span>com uma<br> semana intensiva de conteúdo de mercado entre<br>  <span class="text-background-black">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+                Esse será um evento exclusivo para todos os alunos <br>da <b>DNC</b>, que querem <span class="text-background-black"> acelerar a carreira </span>com uma<br> semana intensiva de conteúdo de mercado entre<br>  <span class="text-background-black">BACK-END, FRONT-END & BANCO DE DADOS.</span>
             </h2>
         </div>
     </div>
 
     <!--    Form    -->
-    <div class="conteiner" id="form">
-        <div>
-
-        </div>
-        <div>
+    <div id="form">
             <form action="" id="main-form">
-                <label for="name">Nome</label><br>
-                <input type="text" placeholder="Insira seu nome aqui" name="name" class="input"><br>
-                <label for="last-name">Sobrenome</label><br>
-                <input type="text" placeholder="Insira seu sobrenome aqui" name="last-name" class="input"><br><br>
+                <div>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" placeholder="Insira seu nome aqui" name="name" class="input">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" placeholder="Insira seu sobrenome aqui" name="last-name" class="input">
+                    </div>
+                    <p>Área de interesse:</p>
+                    <div id="checkbox-block">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="options" id="option1">
+                            <label for="option31">Front-End</label>
+                        </div>
 
-                <p>Área de interesse:</p>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="options" id="option2">
+                            <label for="option2">Back-end</label>
+                        </div>
 
-                <input type="checkbox" name="options" id="option1">
-                <label for="option31">Front-End</label>
-
-                <input type="checkbox" name="options" id="option2">
-                <label for="option2">Back-end</label>
-
-                <input type="checkbox" name="options" id="option3">
-                <label for="option3">Banco de Dados</label><br><br>
-
-                <label for="email">E-mail</label><br>
-                <input type="text" class="input" placeholder="Insira seu e-mail aqui" name="last-name"><br>
-
-                <label for="phone-number">Telefone:</label><br>
-                <input type="text" class="input" placeholder="(99)99999-9999" name="last-name"><br>
-
-                <label for="email">Insira uma frase criativa aqui:</label><br>
-                <input type="text" placeholder="Qual frase criativa você gostaria de falar: :)"  class="input" name="phrase"><br>
-
-                <button type="submit" id="submit-login">Login</button>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="options" id="option3">
+                            <label for="option3">Banco de Dados</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="input" placeholder="Insira seu e-mail aqui" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Telefone:</label>
+                        <input type="text" class="input" placeholder="(99)99999-9999" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Insira uma frase criativa aqui:</label>
+                        <input type="text" placeholder="Qual frase criativa você gostaria de falar: :)"  class="input" name="phrase">
+                    </div>
+                    <button type="submit" id="submit-login">Login</button>
+                </div>
             </form>
-        </div>
-        <div>
-
-        </div>
     </div>
 
     <!--    Bottom Menu -->
